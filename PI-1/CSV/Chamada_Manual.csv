@@ -1,52 +1,52 @@
 Disciplina,Local,Chamada,Tempo,Observações / Imprevistos
-Inteligência Artificial,Laboratório,1ª,05:16,"Professor parou por alguns minutos, aluno chegou do nada"
-Inteligência Artificial,Laboratório,1ª,05:30,Professor parando do nada e 2 reaberturas de chamada
-Inteligência Artificial,Laboratório,1ª,05:41,Duas pausas durante a chamada e 3 alunos atrasados
-Prog. Mobile,Laboratório,1ª,02:45,Nenhum
-Prog. Mobile,Laboratório,1ª,02:30,Nenhum
-Prog. Mobile,Laboratório,2ª,08:18,Deu erro no sistema do CEUB...
-Prog. Mobile,Laboratório,2ª,08:20,Deu erro no sistema do CEUB...
-Projeto Integrador I,Laboratório,1ª,03:40,Chamada realizada de acordo com a presença dos líderes
-Projeto Integrador I,Laboratório,1ª,03:45,Chamada realizada de acordo com a presença dos líderes
-Interação Humano-Comp.,Laboratório,1ª,03:01,1 aluno pediu pra dar presença depois da chamada
-Interação Humano-Comp.,Laboratório,1ª,02:50,No começo da chamada o sistema reiniciou
-Interação Humano-Comp.,Laboratório,1ª,02:58,Três alunos chegaram atrasados pedindo para abrir a chamada novamente
-Interação Humano-Comp.,Laboratório,1ª,03:10,(Observação Faltante)
-Prog. Mobile,Laboratório,1ª,04:01,Aluna conversou com o professor durante a chamada
-Prog. Mobile,Laboratório,2ª,02:36,Nenhum
-Inteligência Artificial,Laboratório,1ª,04:30,4 alunos atrasados
-Prog. Mobile,Laboratório,1ª,05:05,Nenhum
-Gerência de Proj. TI,Sala de aula,1ª,03:44,Nenhum
-Projeto Integrador I,Laboratório,1ª,05:35,Nenhum
-Gerência de Proj. TI,Sala de aula,1ª,05:44,Nenhum
-Gerência de Proj. TI,Sala de aula,1ª,04:32,Nenhum
-Gerência de Proj. TI,Sala de aula,1ª,04:35,Nenhum
-Gerência de Proj. TI,Sala de aula,1ª,04:33,Nenhum
-Inteligência Artificial,Sala de aula,1ª,05:42,"Aluno chegou atrasado, professor reabriu a chamada"
-Inteligência Artificial,Sala de aula,1ª,05:40,"Aluno chegou atrasado, professor reabriu a chamada"
-Inteligência Artificial,Sala de aula,1ª,05:44,"Aluno chegou atrasado, professor reabriu a chamada"
-Prog. Mobile,Laboratório,1ª,03:01,Poucos alunos presentes
-Prog. Mobile,Laboratório,1ª,02:58,Poucos alunos presentes
-Prog. Mobile,Laboratório,1ª,03:00,Poucos alunos presentes
-Prog. Mobile,Laboratório,2ª,02:40,Nenhum
-Prog. Mobile,Laboratório,2ª,02:42,Nenhum
-Prog. Mobile,Laboratório,2ª,02:41,Nenhum
-Interação Humano-Comp.,Laboratório,1ª,07:35,"Erro no sistema CEUB, professor reiniciou"
-Interação Humano-Comp.,Laboratório,1ª,07:30,"Erro no sistema CEUB, professor reiniciou"
-Interação Humano-Comp.,Laboratório,1ª,07:32,"Erro no sistema CEUB, professor reiniciou"
-Projeto Integrador I,Laboratório,1ª,03:45,Chamada realizada pelos líderes
-Projeto Integrador I,Laboratório,1ª,03:42,Chamada realizada pelos líderes
-Projeto Integrador I,Laboratório,1ª,03:44,Chamada realizada pelos líderes
-Gerência de Proj. TI,Sala de aula,1ª,05:10,Muita conversa paralela
-Gerência de Proj. TI,Sala de aula,1ª,05:12,Muita conversa paralela
-Gerência de Proj. TI,Sala de aula,1ª,05:08,Muita conversa paralela
-Inteligência Artificial,Laboratório,1ª,05:02,Aluno respondeu pelo colega
-Inteligência Artificial,Laboratório,1ª,05:00,Aluno respondeu pelo colega
-Inteligência Artificial,Laboratório,1ª,05:05,Aluno respondeu pelo colega
-Prog. Mobile,Laboratório,1ª,03:30,Nenhum
-Prog. Mobile,Laboratório,1ª,03:32,Nenhum
-Prog. Mobile,Laboratório,2ª,02:50,Nenhum
-Prog. Mobile,Laboratório,2ª,02:51,Nenhum
-Interação Humano-Comp.,Laboratório,1ª,04:15,Nenhum
-Interação Humano-Comp.,Laboratório,1ª,04:17,Nenhum
-Interação Humano-Comp.,Laboratório,1ª,04:16,Nenhum
+IA,Laboratório,1ª,05:16,"Professor parou por alguns minutos, aluno chegou do nada"
+IA,Laboratório,1ª,05:30,Professor parando do nada e 2 reaberturas de chamada
+IA,Laboratório,1ª,05:41,Duas pausas durante a chamada e 3 alunos atrasados
+PPDM,Laboratório,1ª,02:45,Nenhum
+PPDM,Laboratório,1ª,02:30,Nenhum
+PPDM,Laboratório,2ª,08:18,Deu erro no sistema do CEUB...
+PPDM,Laboratório,2ª,08:20,Deu erro no sistema do CEUB...
+PI1,Laboratório,1ª,03:40,Chamada realizada de acordo com a presença dos líderes
+PI1,Laboratório,1ª,03:45,Chamada realizada de acordo com a presença dos líderes
+IHC,Laboratório,1ª,03:01,1 aluno pediu pra dar presença depois da chamada
+IHC,Laboratório,1ª,02:50,No começo da chamada o sistema reiniciou
+IHC,Laboratório,1ª,02:58,Três alunos chegaram atrasados pedindo para abrir a chamada novamente
+IHC,Laboratório,1ª,03:10,(Observação Faltante)
+PPDM,Laboratório,1ª,04:01,Aluna conversou com o professor durante a chamada
+PPDM,Laboratório,2ª,02:36,Nenhum
+IA,Laboratório,1ª,04:30,4 alunos atrasados
+PPDM,Laboratório,1ª,05:05,Nenhum
+GPTI,Sala de aula,1ª,03:44,Nenhum
+PI1,Laboratório,1ª,05:35,Nenhum
+GPTI,Sala de aula,1ª,05:44,Nenhum
+GPTI,Sala de aula,1ª,04:32,Nenhum
+GPTI,Sala de aula,1ª,04:35,Nenhum
+GPTI,Sala de aula,1ª,04:33,Nenhum
+IA,Sala de aula,1ª,05:42,"Aluno chegou atrasado, professor reabriu a chamada"
+IA,Sala de aula,1ª,05:40,"Aluno chegou atrasado, professor reabriu a chamada"
+IA,Sala de aula,1ª,05:44,"Aluno chegou atrasado, professor reabriu a chamada"
+PPDM,Laboratório,1ª,03:01,Poucos alunos presentes
+PPDM,Laboratório,1ª,02:58,Poucos alunos presentes
+PPDM,Laboratório,1ª,03:00,Poucos alunos presentes
+PPDM,Laboratório,2ª,02:40,Nenhum
+PPDM,Laboratório,2ª,02:42,Nenhum
+PPDM,Laboratório,2ª,02:41,Nenhum
+IHC,Laboratório,1ª,07:35,"Erro no sistema CEUB, professor reiniciou"
+IHC,Laboratório,1ª,07:30,"Erro no sistema CEUB, professor reiniciou"
+IHC,Laboratório,1ª,07:32,"Erro no sistema CEUB, professor reiniciou"
+PI1,Laboratório,1ª,03:45,Chamada realizada pelos líderes
+PI1,Laboratório,1ª,03:42,Chamada realizada pelos líderes
+PI1,Laboratório,1ª,03:44,Chamada realizada pelos líderes
+GPTI,Sala de aula,1ª,05:10,Muita conversa paralela
+GPTI,Sala de aula,1ª,05:12,Muita conversa paralela
+GPTI,Sala de aula,1ª,05:08,Muita conversa paralela
+IA,Laboratório,1ª,05:02,Aluno respondeu pelo colega
+IA,Laboratório,1ª,05:00,Aluno respondeu pelo colega
+IA,Laboratório,1ª,05:05,Aluno respondeu pelo colega
+PPDM,Laboratório,1ª,03:30,Nenhum
+PPDM,Laboratório,1ª,03:32,Nenhum
+PPDM,Laboratório,2ª,02:50,Nenhum
+PPDM,Laboratório,2ª,02:51,Nenhum
+IHC,Laboratório,1ª,04:15,Nenhum
+IHC,Laboratório,1ª,04:17,Nenhum
+IHC,Laboratório,1ª,04:16,Nenhum
