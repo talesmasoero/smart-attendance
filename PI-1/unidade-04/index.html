@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Attendance Dashboard - CEUB</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #43054e 0%, #662c92 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #fde100;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #ec0089;
+        }
+
+        .filters {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .filter-btn {
+            padding: 12px 24px;
+            border: 2px solid #bf0087;
+            background: white;
+            color: #43054e;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 1em;
+        }
+
+        .filter-btn:hover {
+            background: #bf0087;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(191, 0, 135, 0.4);
+        }
+
+        .filter-btn.active {
+            background: #ec0089;
+            color: white;
+            border-color: #ec0089;
+        }
+
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .kpi-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .kpi-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .kpi-title {
+            color: #43054e;
+            font-size: 0.95em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .kpi-value {
+            font-size: 3em;
+            font-weight: bold;
+            color: #ec0089;
+            margin-bottom: 10px;
+        }
+
+        .kpi-subtitle {
+            color: #662c92;
+            font-size: 0.9em;
+        }
+
+        /* Layout de Grid para Gráficos */
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .chart-container {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chart-container.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .chart-container.compact {
+            max-height: 400px;
+        }
+
+        .chart-title {
+            color: #43054e;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .chart-wrapper {
+            position: relative;
+            height: 300px;
+            flex: 1;
+        }
+
+        .chart-wrapper.tall {
+            height: 350px;
+        }
+
+        .chart-wrapper.short {
+            height: 280px;
+        }
+
+        canvas {
+            max-height: 100%;
+        }
+
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .stat-item {
+            background: linear-gradient(135deg, #bf0087 0%, #ec0089 100%);
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .stat-label {
+            font-size: 0.85em;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .stat-value {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        @media (max-width: 1024px) {
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .chart-container.full-width {
+                grid-column: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .kpi-value {
+                font-size: 2.5em;
+            }
+
+            .chart-wrapper {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Smart Attendance Dashboard</h1>
+            <p class="subtitle">Sistema Inteligente de Chamada - CEUB</p>
+        </header>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Todas as Disciplinas</button>
+            <button class="filter-btn" data-filter="laboratorio">Laboratório</button>
+            <button class="filter-btn" data-filter="sala">Sala de Aula</button>
+        </div>
+
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <div class="kpi-title">Redução de Tempo</div>
+                <div class="kpi-value" id="kpi-reducao">--%</div>
+                <div class="kpi-subtitle">Economia média por chamada</div>
+            </div>
+
+            <div class="kpi-card">
+                <div class="kpi-title">Eficiência por Aluno</div>
+                <div class="kpi-value" id="kpi-eficiencia">--s</div>
+                <div class="kpi-subtitle">Tempo médio smart attendance</div>
+            </div>
+
+            <div class="kpi-card">
+                <div class="kpi-title">Custo de Oportunidade</div>
+                <div class="kpi-value" id="kpi-custo">--h</div>
+                <div class="kpi-subtitle">Horas recuperadas por semestre</div>
+            </div>
+        </div>
+
+        <!-- Grid de Gráficos Organizado -->
+        <div class="charts-grid">
+            <!-- Gráfico Comparativo -->
+            <div class="chart-container">
+                <div class="chart-title">Comparativo: Manual vs Smart</div>
+                <div class="chart-wrapper">
+                    <canvas id="comparativoChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Gráfico de Economia -->
+            <div class="chart-container">
+                <div class="chart-title">Tempo Economizado</div>
+                <div class="chart-wrapper">
+                    <canvas id="economiaChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Gráfico de Disciplina (Largura Total) -->
+            <div class="chart-container full-width">
+                <div class="chart-title">Análise por Disciplina</div>
+                <div class="chart-wrapper short">
+                    <canvas id="disciplinaChart"></canvas>
+                </div>
+                <div class="stats-row" id="disciplinaStats"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Configuração das disciplinas por ambiente
+        const ambientes = {
+            laboratorio: ['PPDM', 'PI1', 'IHC'],
+            sala: ['GPTI', 'IA']
+        };
+
+        let dadosAtual = [];
+        let dadosSimulada = [];
+        let filtroAtivo = 'all';
+
+        // Carregar dados
+        async function carregarDados() {
+            try {
+                const [resAtual, resSimulada] = await Promise.all([
+                    fetch('chamada-atual-simplificada.json'),
+                    fetch('chamada-simulada-simplificada.json')
+                ]);
+                
+                dadosAtual = await resAtual.json();
+                dadosSimulada = await resSimulada.json();
+                
+                inicializarDashboard();
+            } catch (error) {
+                console.error('Erro ao carregar dados:', error);
+                document.querySelector('.container').innerHTML = 
+                    '<div class="loading">❌ Erro ao carregar dados. Verifique se os arquivos JSON estão na raiz do projeto.</div>';
+            }
+        }
+
+        function filtrarDados() {
+            if (filtroAtivo === 'all') {
+                return {
+                    atual: dadosAtual,
+                    simulada: dadosSimulada
+                };
+            }
+
+            const disciplinas = ambientes[filtroAtivo];
+            return {
+                atual: dadosAtual.filter(d => disciplinas.includes(d.Disciplina)),
+                simulada: dadosSimulada.filter(d => disciplinas.includes(d.Disciplina))
+            };
+        }
+
+        function calcularKPIs() {
+            const { atual, simulada } = filtrarDados();
+            
+            const tempoManualTotal = atual.reduce((sum, d) => sum + d.TempoMedioSegundos, 0);
+            const tempoSmartTotal = simulada.reduce((sum, d) => sum + d.DuracaoChamadaSegundos, 0);
+            const reducaoPercentual = ((tempoManualTotal - tempoSmartTotal) / tempoManualTotal * 100).toFixed(1);
+            
+            const totalAlunos = simulada.reduce((sum, d) => sum + d.TotalAlunos, 0);
+            const eficienciaPorAluno = (tempoSmartTotal / totalAlunos).toFixed(0);
+            
+            const economiaSegundosPorChamada = (tempoManualTotal - tempoSmartTotal) / simulada.length;
+            const chamadaPorSemana = simulada.length;
+            const horasRecuperadasSemestre = (economiaSegundosPorChamada * chamadaPorSemana * 18) / 3600;
+            
+            document.getElementById('kpi-reducao').textContent = `${reducaoPercentual}%`;
+            document.getElementById('kpi-eficiencia').textContent = `${eficienciaPorAluno}s`;
+            document.getElementById('kpi-custo').textContent = `${horasRecuperadasSemestre.toFixed(1)}h`;
+        }
+
+        function criarGraficoComparativo() {
+            const { atual, simulada } = filtrarDados();
+            
+            const ctx = document.getElementById('comparativoChart').getContext('2d');
+            
+            if (window.comparativoChartInstance) {
+                window.comparativoChartInstance.destroy();
+            }
+            
+            window.comparativoChartInstance = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: atual.map(d => d.Disciplina),
+                    datasets: [
+                        {
+                            label: 'Manual (min)',
+                            data: atual.map(d => (d.TempoMedioSegundos / 60).toFixed(2)),
+                            backgroundColor: '#bf0087',
+                            borderRadius: 8
+                        },
+                        {
+                            label: 'Smart (min)',
+                            data: simulada.map(d => (d.DuracaoChamadaSegundos / 60).toFixed(2)),
+                            backgroundColor: '#fde100',
+                            borderRadius: 8
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                            labels: {
+                                font: { size: 12, weight: 'bold' },
+                                color: '#43054e',
+                                boxWidth: 15
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Tempo (min)',
+                                color: '#43054e',
+                                font: { size: 11, weight: 'bold' }
+                            },
+                            ticks: {
+                                font: { size: 10 }
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                font: { size: 10 }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function criarGraficoDisciplina() {
+            const { atual, simulada } = filtrarDados();
+            
+            const ctx = document.getElementById('disciplinaChart').getContext('2d');
+            
+            if (window.disciplinaChartInstance) {
+                window.disciplinaChartInstance.destroy();
+            }
+            
+            const economia = atual.map((d, i) => {
+                return ((d.TempoMedioSegundos - simulada[i].DuracaoChamadaSegundos) / d.TempoMedioSegundos * 100).toFixed(1);
+            });
+            
+            window.disciplinaChartInstance = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: atual.map(d => d.Disciplina),
+                    datasets: [{
+                        label: 'Economia (%)',
+                        data: economia,
+                        borderColor: '#ec0089',
+                        backgroundColor: 'rgba(236, 0, 137, 0.1)',
+                        borderWidth: 3,
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 6,
+                        pointBackgroundColor: '#ec0089',
+                        pointBorderColor: '#fff',
+                        pointBorderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: {
+                                font: { size: 12, weight: 'bold' },
+                                color: '#43054e',
+                                boxWidth: 15
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100,
+                            title: {
+                                display: true,
+                                text: 'Redução (%)',
+                                color: '#43054e',
+                                font: { size: 11, weight: 'bold' }
+                            },
+                            ticks: {
+                                font: { size: 10 }
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                font: { size: 10 }
+                            }
+                        }
+                    }
+                }
+            });
+
+            const statsDiv = document.getElementById('disciplinaStats');
+            statsDiv.innerHTML = simulada.map((d, i) => `
+                <div class="stat-item">
+                    <div class="stat-label">${d.Disciplina}</div>
+                    <div class="stat-value">${d.TotalAlunos} alunos</div>
+                </div>
+            `).join('');
+        }
+
+        function criarGraficoEconomia() {
+            const { atual, simulada } = filtrarDados();
+            
+            const ctx = document.getElementById('economiaChart').getContext('2d');
+            
+            if (window.economiaChartInstance) {
+                window.economiaChartInstance.destroy();
+            }
+            
+            const economiaSegundos = atual.map((d, i) => 
+                d.TempoMedioSegundos - simulada[i].DuracaoChamadaSegundos
+            );
+            
+            window.economiaChartInstance = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: atual.map(d => d.Disciplina),
+                    datasets: [{
+                        data: economiaSegundos,
+                        backgroundColor: [
+                            '#43054e',
+                            '#662c92',
+                            '#bf0087',
+                            '#ec0089',
+                            '#fde100'
+                        ],
+                        borderWidth: 2,
+                        borderColor: '#fff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                font: { size: 11, weight: 'bold' },
+                                color: '#43054e',
+                                padding: 10,
+                                boxWidth: 12
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const segundos = context.parsed;
+                                    const minutos = (segundos / 60).toFixed(2);
+                                    return `${context.label}: ${minutos} min`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function inicializarDashboard() {
+            calcularKPIs();
+            criarGraficoComparativo();
+            criarGraficoDisciplina();
+            criarGraficoEconomia();
+        }
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                filtroAtivo = this.dataset.filter;
+                inicializarDashboard();
+            });
+        });
+
+        carregarDados();
+    </script>
+</body>
+</html>

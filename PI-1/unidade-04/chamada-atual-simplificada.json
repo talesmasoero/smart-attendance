@@ -1,0 +1,32 @@
+[
+  {
+    "Data": "27/10/2025",
+    "Disciplina": "GPTI",
+    "TempoMedio": "04:49",
+    "TempoMedioSegundos": 289.75
+  },
+  {
+    "Data": "28/10/2025",
+    "Disciplina": "IA",
+    "TempoMedio": "05:19",
+    "TempoMedioSegundos": 319.0
+  },
+  {
+    "Data": "29/10/2025",
+    "Disciplina": "PPDM",
+    "TempoMedio": "07:29",
+    "TempoMedioSegundos": 449.69
+  },
+  {
+    "Data": "30/10/2025",
+    "Disciplina": "PI1",
+    "TempoMedio": "04:01",
+    "TempoMedioSegundos": 241.83
+  },
+  {
+    "Data": "31/10/2025",
+    "Disciplina": "IHC",
+    "TempoMedio": "04:44",
+    "TempoMedioSegundos": 284.4
+  }
+]

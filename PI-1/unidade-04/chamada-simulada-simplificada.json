@@ -1,0 +1,42 @@
+[
+  {
+    "Data": "27/10/2025",
+    "Disciplina": "GPTI",
+    "TotalAlunos": 14,
+    "DuracaoChamada": "3:11",
+    "DuracaoChamadaSegundos": 191,
+    "RegistrosPresenca": 14
+  },
+  {
+    "Data": "28/10/2025",
+    "Disciplina": "IA",
+    "TotalAlunos": 14,
+    "DuracaoChamada": "2:20",
+    "DuracaoChamadaSegundos": 140,
+    "RegistrosPresenca": 14
+  },
+  {
+    "Data": "29/10/2025",
+    "Disciplina": "PPDM",
+    "TotalAlunos": 12,
+    "DuracaoChamada": "2:15",
+    "DuracaoChamadaSegundos": 135,
+    "RegistrosPresenca": 12
+  },
+  {
+    "Data": "30/10/2025",
+    "Disciplina": "PI1",
+    "TotalAlunos": 11,
+    "DuracaoChamada": "2:08",
+    "DuracaoChamadaSegundos": 128,
+    "RegistrosPresenca": 11
+  },
+  {
+    "Data": "31/10/2025",
+    "Disciplina": "IHC",
+    "TotalAlunos": 13,
+    "DuracaoChamada": "2:38",
+    "DuracaoChamadaSegundos": 158,
+    "RegistrosPresenca": 13
+  }
+]
