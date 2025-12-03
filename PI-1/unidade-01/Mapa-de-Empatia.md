@@ -1,7 +1,7 @@
 
-# 🗺️ Mapas de Empatia
+#  Mapas de Empatia
 
-## 🧑‍🎓 Perfil: Aluno
+##  Aluno
 
 | O QUE ELE **PENSA E SENTE**? | O QUE ELE **VÊ**? |
 | :--- | :--- |
@@ -10,6 +10,8 @@
 | *Tédio/Impaciência:* "Meu nome é um dos últimos, que demora." | Outros alunos mexendo no celular, claramente entediados enquanto esperam. |
 | *Insegurança:* "Será que ele ouviu meu 'presente' direito? E se ele marcou errado?" | O relógio na parede, marcando o tempo que está sendo gasto. |
 
+| O QUE ELE **OUVE**? | O QUE ELE **FALA E FAZ**? |
+| :--- | :--- |
 | O som monótono das respostas "Presente!". | **Fala:** Responde "Presente!" de forma automática quando seu nome é chamado. |
 | O barulho e as conversas dos alunos que já saíram e estão no corredor. | **Fala:** Pergunta a um colega ao chegar: "A chamada já passou?". |
 | A porta se abrindo com um aluno atrasado no meio da chamada. | **Faz:** Espera, olhando para o celular ou para o nada, até chegar sua vez. |
@@ -17,7 +19,7 @@
 
 ---
 
-## 👨‍🏫 Perfil: Professor
+##  Professor
 
 | O QUE ELE **PENSA E SENTE**? | O QUE ELE **VÊ**? |
 | :--- | :--- |
