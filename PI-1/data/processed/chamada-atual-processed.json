@@ -1,0 +1,461 @@
+[
+ {
+   "Disciplina": "IA",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "05:16",
+   "Observações ": {
+      " Imprevistos": "Professor parou por alguns minutos, aluno chegou do nada"
+   }
+},
+ {
+   "Disciplina": "IA",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "05:30",
+   "Observações ": {
+      " Imprevistos": "Professor parando do nada e 2 reaberturas de chamada"
+   }
+},
+ {
+   "Disciplina": "IA",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "05:41",
+   "Observações ": {
+      " Imprevistos": "Duas pausas durante a chamada e 3 alunos atrasados"
+   }
+},
+ {
+   "Disciplina": "PPDM",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "02:45",
+   "Observações ": {
+      " Imprevistos": "Nenhum"
+   }
+},
+ {
+   "Disciplina": "PPDM",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "02:30",
+   "Observações ": {
+      " Imprevistos": "Nenhum"
+   }
+},
+ {
+   "Disciplina": "PPDM",
+   "Local": "Laboratório",
+   "Chamada": "2ª",
+   "Tempo": "08:18",
+   "Observações ": {
+      " Imprevistos": "Deu erro no sistema do CEUB..."
+   }
+},
+ {
+   "Disciplina": "PPDM",
+   "Local": "Laboratório",
+   "Chamada": "2ª",
+   "Tempo": "08:20",
+   "Observações ": {
+      " Imprevistos": "Deu erro no sistema do CEUB..."
+   }
+},
+ {
+   "Disciplina": "PI1",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "03:40",
+   "Observações ": {
+      " Imprevistos": "Chamada realizada de acordo com a presença dos líderes"
+   }
+},
+ {
+   "Disciplina": "PI1",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "03:45",
+   "Observações ": {
+      " Imprevistos": "Chamada realizada de acordo com a presença dos líderes"
+   }
+},
+ {
+   "Disciplina": "IHC",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "03:01",
+   "Observações ": {
+      " Imprevistos": "1 aluno pediu pra dar presença depois da chamada"
+   }
+},
+ {
+   "Disciplina": "IHC",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "02:50",
+   "Observações ": {
+      " Imprevistos": "No começo da chamada o sistema reiniciou"
+   }
+},
+ {
+   "Disciplina": "IHC",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "02:58",
+   "Observações ": {
+      " Imprevistos": "Três alunos chegaram atrasados pedindo para abrir a chamada novamente"
+   }
+},
+ {
+   "Disciplina": "IHC",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "03:10",
+   "Observações ": {
+      " Imprevistos": "(Observação Faltante)"
+   }
+},
+ {
+   "Disciplina": "PPDM",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "04:01",
+   "Observações ": {
+      " Imprevistos": "Aluna conversou com o professor durante a chamada"
+   }
+},
+ {
+   "Disciplina": "PPDM",
+   "Local": "Laboratório",
+   "Chamada": "2ª",
+   "Tempo": "02:36",
+   "Observações ": {
+      " Imprevistos": "Nenhum"
+   }
+},
+ {
+   "Disciplina": "IA",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "04:30",
+   "Observações ": {
+      " Imprevistos": "4 alunos atrasados"
+   }
+},
+ {
+   "Disciplina": "PPDM",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "05:05",
+   "Observações ": {
+      " Imprevistos": "Nenhum"
+   }
+},
+ {
+   "Disciplina": "GPTI",
+   "Local": "Sala de Aula",
+   "Chamada": "1ª",
+   "Tempo": "03:44",
+   "Observações ": {
+      " Imprevistos": "Nenhum"
+   }
+},
+ {
+   "Disciplina": "PI1",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "05:35",
+   "Observações ": {
+      " Imprevistos": "Nenhum"
+   }
+},
+ {
+   "Disciplina": "GPTI",
+   "Local": "Sala de Aula",
+   "Chamada": "1ª",
+   "Tempo": "05:44",
+   "Observações ": {
+      " Imprevistos": "Nenhum"
+   }
+},
+ {
+   "Disciplina": "GPTI",
+   "Local": "Sala de Aula",
+   "Chamada": "1ª",
+   "Tempo": "04:32",
+   "Observações ": {
+      " Imprevistos": "Nenhum"
+   }
+},
+ {
+   "Disciplina": "GPTI",
+   "Local": "Sala de Aula",
+   "Chamada": "1ª",
+   "Tempo": "04:35",
+   "Observações ": {
+      " Imprevistos": "Nenhum"
+   }
+},
+ {
+   "Disciplina": "GPTI",
+   "Local": "Sala de Aula",
+   "Chamada": "1ª",
+   "Tempo": "04:33",
+   "Observações ": {
+      " Imprevistos": "Nenhum"
+   }
+},
+ {
+   "Disciplina": "IA",
+   "Local": "Sala de Aula",
+   "Chamada": "1ª",
+   "Tempo": "05:42",
+   "Observações ": {
+      " Imprevistos": "Aluno chegou atrasado, professor reabriu a chamada"
+   }
+},
+ {
+   "Disciplina": "IA",
+   "Local": "Sala de Aula",
+   "Chamada": "1ª",
+   "Tempo": "05:40",
+   "Observações ": {
+      " Imprevistos": "Aluno chegou atrasado, professor reabriu a chamada"
+   }
+},
+ {
+   "Disciplina": "IA",
+   "Local": "Sala de Aula",
+   "Chamada": "1ª",
+   "Tempo": "05:44",
+   "Observações ": {
+      " Imprevistos": "Aluno chegou atrasado, professor reabriu a chamada"
+   }
+},
+ {
+   "Disciplina": "PPDM",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "03:01",
+   "Observações ": {
+      " Imprevistos": "Poucos alunos presentes"
+   }
+},
+ {
+   "Disciplina": "PPDM",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "02:58",
+   "Observações ": {
+      " Imprevistos": "Poucos alunos presentes"
+   }
+},
+ {
+   "Disciplina": "PPDM",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "03:00",
+   "Observações ": {
+      " Imprevistos": "Poucos alunos presentes"
+   }
+},
+ {
+   "Disciplina": "PPDM",
+   "Local": "Laboratório",
+   "Chamada": "2ª",
+   "Tempo": "02:40",
+   "Observações ": {
+      " Imprevistos": "Nenhum"
+   }
+},
+ {
+   "Disciplina": "PPDM",
+   "Local": "Laboratório",
+   "Chamada": "2ª",
+   "Tempo": "02:42",
+   "Observações ": {
+      " Imprevistos": "Nenhum"
+   }
+},
+ {
+   "Disciplina": "PPDM",
+   "Local": "Laboratório",
+   "Chamada": "2ª",
+   "Tempo": "02:41",
+   "Observações ": {
+      " Imprevistos": "Nenhum"
+   }
+},
+ {
+   "Disciplina": "IHC",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "07:35",
+   "Observações ": {
+      " Imprevistos": "Erro no sistema CEUB, professor reiniciou"
+   }
+},
+ {
+   "Disciplina": "IHC",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "07:30",
+   "Observações ": {
+      " Imprevistos": "Erro no sistema CEUB, professor reiniciou"
+   }
+},
+ {
+   "Disciplina": "IHC",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "07:32",
+   "Observações ": {
+      " Imprevistos": "Erro no sistema CEUB, professor reiniciou"
+   }
+},
+ {
+   "Disciplina": "PI1",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "03:45",
+   "Observações ": {
+      " Imprevistos": "Chamada realizada pelos líderes"
+   }
+},
+ {
+   "Disciplina": "PI1",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "03:42",
+   "Observações ": {
+      " Imprevistos": "Chamada realizada pelos líderes"
+   }
+},
+ {
+   "Disciplina": "PI1",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "03:44",
+   "Observações ": {
+      " Imprevistos": "Chamada realizada pelos líderes"
+   }
+},
+ {
+   "Disciplina": "GPTI",
+   "Local": "Sala de Aula",
+   "Chamada": "1ª",
+   "Tempo": "05:10",
+   "Observações ": {
+      " Imprevistos": "Muita conversa paralela"
+   }
+},
+ {
+   "Disciplina": "GPTI",
+   "Local": "Sala de Aula",
+   "Chamada": "1ª",
+   "Tempo": "05:12",
+   "Observações ": {
+      " Imprevistos": "Muita conversa paralela"
+   }
+},
+ {
+   "Disciplina": "GPTI",
+   "Local": "Sala de Aula",
+   "Chamada": "1ª",
+   "Tempo": "05:08",
+   "Observações ": {
+      " Imprevistos": "Muita conversa paralela"
+   }
+},
+ {
+   "Disciplina": "IA",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "05:02",
+   "Observações ": {
+      " Imprevistos": "Aluno respondeu pelo colega"
+   }
+},
+ {
+   "Disciplina": "IA",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "05:00",
+   "Observações ": {
+      " Imprevistos": "Aluno respondeu pelo colega"
+   }
+},
+ {
+   "Disciplina": "IA",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "05:05",
+   "Observações ": {
+      " Imprevistos": "Aluno respondeu pelo colega"
+   }
+},
+ {
+   "Disciplina": "PPDM",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "03:30",
+   "Observações ": {
+      " Imprevistos": "Nenhum"
+   }
+},
+ {
+   "Disciplina": "PPDM",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "03:32",
+   "Observações ": {
+      " Imprevistos": "Nenhum"
+   }
+},
+ {
+   "Disciplina": "PPDM",
+   "Local": "Laboratório",
+   "Chamada": "2ª",
+   "Tempo": "02:50",
+   "Observações ": {
+      " Imprevistos": "Nenhum"
+   }
+},
+ {
+   "Disciplina": "PPDM",
+   "Local": "Laboratório",
+   "Chamada": "2ª",
+   "Tempo": "02:51",
+   "Observações ": {
+      " Imprevistos": "Nenhum"
+   }
+},
+ {
+   "Disciplina": "IHC",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "04:15",
+   "Observações ": {
+      " Imprevistos": "Nenhum"
+   }
+},
+ {
+   "Disciplina": "IHC",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "04:17",
+   "Observações ": {
+      " Imprevistos": "Nenhum"
+   }
+},
+ {
+   "Disciplina": "IHC",
+   "Local": "Laboratório",
+   "Chamada": "1ª",
+   "Tempo": "04:16",
+   "Observações ": {
+      " Imprevistos": "Nenhum"
+   }
+}
+]
