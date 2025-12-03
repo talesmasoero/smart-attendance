@@ -1,0 +1,52 @@
+Timestamp,Disciplina,Local,Chamada,Tempo,Observações / Imprevistos
+28/10/2025 10:00:05,IA,Laboratório,1ª,05:16,"Professor parou por alguns minutos, aluno chegou do nada"
+28/10/2025 10:00:08,IA,Laboratório,1ª,05:30,Professor parando do nada e 2 reaberturas de chamada
+28/10/2025 10:00:15,IA,Laboratório,1ª,05:41,Duas pausas durante a chamada e 3 alunos atrasados
+29/10/2025 10:00:09,PPDM,Laboratório,1ª,02:45,Nenhum
+29/10/2025 10:00:15,PPDM,Laboratório,1ª,02:30,Nenhum
+29/10/2025 10:00:20,PPDM,Laboratório,2ª,08:18,Deu erro no sistema do CEUB...
+29/10/2025 10:00:29,PPDM,Laboratório,2ª,08:20,Deu erro no sistema do CEUB...
+30/10/2025 09:50:07,PI1,Laboratório,1ª,03:40,Chamada realizada de acordo com a presença dos líderes
+30/10/2025 09:50:11,PI1,Laboratório,1ª,03:45,Chamada realizada de acordo com a presença dos líderes
+31/10/2025 10:00:10,IHC,Laboratório,1ª,03:01,1 aluno pediu pra dar presença depois da chamada
+31/10/2025 10:00:14,IHC,Laboratório,1ª,02:50,No começo da chamada o sistema reiniciou
+31/10/2025 10:00:23,IHC,Laboratório,1ª,02:58,Três alunos chegaram atrasados pedindo para abrir a chamada novamente
+31/10/2025 10:00:30,IHC,Laboratório,1ª,03:10,(Observação Faltante)
+29/10/2025 10:00:36,PPDM,Laboratório,1ª,04:01,Aluna conversou com o professor durante a chamada
+29/10/2025 10:00:49,PPDM,Laboratório,2ª,02:36,Nenhum
+28/10/2025 10:01:40,IA,Laboratório,1ª,04:30,4 alunos atrasados
+29/10/2025 10:02:05,PPDM,Laboratório,1ª,05:05,Nenhum
+27/10/2025 10:10:39,GPTI,Sala de aula,1ª,03:44,Nenhum
+30/10/2025 09:50:28,PI1,Laboratório,1ª,05:35,Nenhum
+27/10/2025 10:10:12,GPTI,Sala de aula,1ª,05:44,Nenhum
+27/10/2025 10:10:17,GPTI,Sala de aula,1ª,04:32,Nenhum
+27/10/2025 10:10:24,GPTI,Sala de aula,1ª,04:35,Nenhum
+27/10/2025 10:10:31,GPTI,Sala de aula,1ª,04:33,Nenhum
+28/10/2025 10:00:30,IA,Sala de aula,1ª,05:42,"Aluno chegou atrasado, professor reabriu a chamada"
+28/10/2025 10:00:41,IA,Sala de aula,1ª,05:40,"Aluno chegou atrasado, professor reabriu a chamada"
+28/10/2025 10:00:52,IA,Sala de aula,1ª,05:44,"Aluno chegou atrasado, professor reabriu a chamada"
+29/10/2025 10:00:58,PPDM,Laboratório,1ª,03:01,Poucos alunos presentes
+29/10/2025 10:01:10,PPDM,Laboratório,1ª,02:58,Poucos alunos presentes
+29/10/2025 10:01:21,PPDM,Laboratório,1ª,03:00,Poucos alunos presentes
+29/10/2025 10:01:45,PPDM,Laboratório,2ª,02:40,Nenhum
+29/10/2025 10:02:05,PPDM,Laboratório,2ª,02:42,Nenhum
+29/10/2025 10:02:24,PPDM,Laboratório,2ª,02:41,Nenhum
+31/10/2025 10:00:40,IHC,Laboratório,1ª,07:35,"Erro no sistema CEUB, professor reiniciou"
+31/10/2025 10:00:55,IHC,Laboratório,1ª,07:30,"Erro no sistema CEUB, professor reiniciou"
+31/10/2025 10:01:05,IHC,Laboratório,1ª,07:32,"Erro no sistema CEUB, professor reiniciou"
+30/10/2025 09:50:35,PI1,Laboratório,1ª,03:45,Chamada realizada pelos líderes
+30/10/2025 09:50:48,PI1,Laboratório,1ª,03:42,Chamada realizada pelos líderes
+30/10/2025 09:51:00,PI1,Laboratório,1ª,03:44,Chamada realizada pelos líderes
+27/10/2025 10:10:50,GPTI,Sala de aula,1ª,05:10,Muita conversa paralela
+27/10/2025 10:11:01,GPTI,Sala de aula,1ª,05:12,Muita conversa paralela
+27/10/2025 10:11:08,GPTI,Sala de aula,1ª,05:08,Muita conversa paralela
+28/10/2025 10:01:03,IA,Laboratório,1ª,05:02,Aluno respondeu pelo colega
+28/10/2025 10:01:17,IA,Laboratório,1ª,05:00,Aluno respondeu pelo colega
+28/10/2025 10:01:29,IA,Laboratório,1ª,05:05,Aluno respondeu pelo colega
+29/10/2025 10:00:20,PPDM,Laboratório,1ª,03:30,Nenhum
+29/10/2025 10:00:36,PPDM,Laboratório,1ª,03:32,Nenhum
+29/10/2025 10:01:10,PPDM,Laboratório,2ª,02:50,Nenhum
+29/10/2025 10:02:24,PPDM,Laboratório,2ª,02:51,Nenhum
+31/10/2025 10:01:21,IHC,Laboratório,1ª,04:15,Nenhum
+31/10/2025 10:01:34,IHC,Laboratório,1ª,04:17,Nenhum
+31/10/2025 10:01:52,IHC,Laboratório,1ª,04:16,Nenhum
