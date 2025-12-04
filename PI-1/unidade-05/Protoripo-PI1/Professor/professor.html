@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor - Sistema de Presença</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- Botão de toggle mobile view -->
+    <button id="mobileToggle" class="mobile-toggle" onclick="toggleMobileView()">📱</button>
+    
+    <div class="container">
+        <h1>Professor</h1>
+        <div class="buttons">
+            <button id="generateQR" class="btn btn-professor">
+                Gerar QR Code
+            </button>
+        </div>
+        <div id="qrcode" class="hidden"></div>
+        <div id="codeDisplay" class="code-display"></div>
+        <button onclick="window.location.href='../tela-inicial/inicial.html'" class="back-btn">
+            Voltar
+        </button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="professor.js"></script>
+    <script src="../mobile-toggle.js"></script>
+</body>
+</html>
